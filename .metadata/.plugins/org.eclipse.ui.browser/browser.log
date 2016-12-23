@@ -1,0 +1,10 @@
+
+Dec 20, 2016 12:58:36.73 NEW SESSION
+Dec 20, 2016 12:58:36.73 [5024:6088:1220/125836:ERROR:cache_util_win.cc(20)] Unable to move the cache: 0
+Dec 20, 2016 12:58:36.73 [5024:6088:1220/125836:ERROR:cache_util.cc(134)] Unable to move cache folder C:\Users\Admin\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\Admin\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+Dec 20, 2016 12:58:36.73 [5024:6088:1220/125836:ERROR:cache_creator.cc(134)] Unable to create cache
+Dec 20, 2016 12:58:36.73 [5024:6088:1220/125836:ERROR:shader_disk_cache.cc(585)] Shader Cache Creation failed: -2
+Dec 20, 2016 12:59:18.94 [8068:4408:1220/125918:ERROR:cache_util_win.cc(20)] Unable to move the cache: 0
+Dec 20, 2016 12:59:18.94 [8068:4408:1220/125918:ERROR:cache_util.cc(134)] Unable to move cache folder C:\Users\Admin\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\Admin\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+Dec 20, 2016 12:59:18.94 [8068:4408:1220/125918:ERROR:cache_creator.cc(134)] Unable to create cache
+Dec 20, 2016 12:59:18.94 [8068:4408:1220/125918:ERROR:shader_disk_cache.cc(585)] Shader Cache Creation failed: -2

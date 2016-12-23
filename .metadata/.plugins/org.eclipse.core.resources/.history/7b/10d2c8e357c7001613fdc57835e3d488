@@ -1,0 +1,5 @@
+package com.ricks.util;
+
+public class ConnectionFactory {
+
+}

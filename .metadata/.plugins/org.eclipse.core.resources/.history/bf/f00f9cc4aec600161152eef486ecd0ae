@@ -1,0 +1,10 @@
+package com.ricks.ws;
+
+public class ResposeDTO {
+	
+	private int status;
+	private String message;
+	private int isbn;
+	
+
+}

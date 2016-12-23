@@ -1,0 +1,6 @@
+package com.ricks.service;
+
+public interface BookService {
+
+	
+}

@@ -1,0 +1,11 @@
+package com.ricks.ws;
+
+import javax.ws.rs.Path;
+
+@Path("books")
+public class BookResource {
+
+	public ResposeDTO registerBooks() {
+		
+	}
+}

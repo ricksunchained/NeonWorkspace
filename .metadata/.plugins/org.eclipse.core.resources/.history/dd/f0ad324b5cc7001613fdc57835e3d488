@@ -1,0 +1,9 @@
+package com.ricks.service;
+
+public interface BookService {
+
+	public int registerBook(Book book) {
+		BookDAOFactory
+		 
+	}
+}

@@ -1,0 +1,12 @@
+package com.ricks.service;
+
+import com.ricks.domain.Book;
+
+public class BookDAOImpl implements BookService {
+
+	public int registerBook(Book book) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

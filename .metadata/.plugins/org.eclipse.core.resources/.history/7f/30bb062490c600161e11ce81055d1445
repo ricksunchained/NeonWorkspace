@@ -1,0 +1,5 @@
+package com.ricks.ws;
+
+public class BookResource {
+
+}

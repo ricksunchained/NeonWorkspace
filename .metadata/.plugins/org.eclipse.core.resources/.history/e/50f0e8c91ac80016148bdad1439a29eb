@@ -1,0 +1,24 @@
+package com.ricks;
+
+import javax.ws.rs.core.MediaType;
+
+import org.jboss.resteasy.client.ClientRequest;
+import org.jboss.resteasy.client.ClientResponse;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+	public static void main(String[] args) {
+		String url = "http://localhost:8080/RestEasyServer/hello/sayHello?name=ricky";
+		ClientRequest clientRequest=new ClientRequest(url);
+		clientRequest.accept(MediaType.TEXT_PLAIN);
+		try {
+			ClientResponse response=clientRequest.get(ClientResponse.class);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

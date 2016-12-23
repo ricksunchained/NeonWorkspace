@@ -1,0 +1,13 @@
+package com.ricks.server;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class ApplicationClass {
+	Set<Object> response=new HashSet<Object>();
+	
+	public ApplicationClass() {
+		response.add(new RestBasicServer());
+	}
+
+}

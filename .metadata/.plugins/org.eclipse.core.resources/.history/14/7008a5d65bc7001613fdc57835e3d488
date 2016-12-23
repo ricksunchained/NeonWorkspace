@@ -1,0 +1,5 @@
+package com.ricks.dao;
+
+public class BookDAOFactory {
+
+}

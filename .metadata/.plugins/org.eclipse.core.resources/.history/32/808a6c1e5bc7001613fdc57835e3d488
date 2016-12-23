@@ -1,0 +1,19 @@
+package com.ricks.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.ricks.domain.Book;
+import com.ricks.util.ConnectionFactory;
+
+public class BookDAOImpl implements BookDAO {
+
+	public int registerBook(Book book) {
+		Connection con=ConnectionFactory.getInstance();
+		String sql="insert into book values(?,?,?,?)";
+		PreparedStatement preparedStatement= con.prepareStatement(sql);
+		
+		return 0;
+	}
+
+}

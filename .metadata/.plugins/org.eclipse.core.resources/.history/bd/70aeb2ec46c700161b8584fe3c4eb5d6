@@ -1,0 +1,10 @@
+package com.ricks.util;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class JsonUtil {
+	public <T> convertJsonToJava(String jsonText,Class<T> clazz) {
+		ObjectMapper mapper=new ObjectMapper();
+	}
+
+}

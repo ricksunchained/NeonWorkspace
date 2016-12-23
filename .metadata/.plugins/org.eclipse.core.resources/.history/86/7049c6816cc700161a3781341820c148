@@ -1,0 +1,23 @@
+package com.ricks.ws;
+
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import com.ricks.domain.Book;
+import com.ricks.service.BookServiceFactory;
+
+@Path("books")
+public class BookResource {
+
+	@Produces(value = { MediaType.APPLICATION_JSON })
+	@POST
+	@Path("/registerBook")
+//	@Consumes(value = { MediaType.APPLICATION_JSON })
+	public ResposeDTO registerBook(Book book) {
+		ResposeDTO resposeDTO = new ResposeDTO();
+		BookServiceFactory.getInstance().registerBook(book);
+		return resposeDTO;
+	}
+}
