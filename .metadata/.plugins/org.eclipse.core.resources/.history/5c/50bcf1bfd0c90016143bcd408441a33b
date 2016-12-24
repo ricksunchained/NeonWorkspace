@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="localBeforeAdvice" class="com.ricks.advice.LoggingBeforeAdvice"></bean>
+	<bean id="customerService" class="com.ricks.service.CustomerService">
+		<property name="name" value="shatish" />
+		<property name="url" value="ricksforu@yahoo.com" />
+	</bean>
+	<bean id="customServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="proxyInterface" value="com.ricks.service.CustomerService"/>
+		<property name="interceptorNames" value="localBeforeAdvice"/>
+		<property name="target" value="com.ricks.service.CustomerServiceImpl"/>
+		
+	</bean>
+
+</beans>

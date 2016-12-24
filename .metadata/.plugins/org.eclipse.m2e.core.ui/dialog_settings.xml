@@ -44,6 +44,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\R!cks\NeonWorkspace"/>
+			<item value="D:\R!cks"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -57,11 +59,16 @@
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
 			<item value="com.ricks"/>
+			<item value="com.ricks.abc"/>
+			<item value="com.ricks.Abc"/>
 		</list>
 		<list key="groupId">
 			<item value="com.ricks"/>
 		</list>
 		<list key="artifactId">
+			<item value="JaxWS-Server"/>
+			<item value="abc"/>
+			<item value="Abc"/>
 			<item value="SpringSercrity"/>
 		</list>
 		<list key="projectNameTemplate">

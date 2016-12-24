@@ -1,0 +1,8 @@
+package com.ricks.service;
+
+public interface CustomerService {
+	public String printName();
+
+	public String printUrl();
+
+}

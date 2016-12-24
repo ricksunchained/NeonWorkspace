@@ -1,0 +1,5 @@
+package com.ricks.service;
+
+public class CustomerService {
+
+}

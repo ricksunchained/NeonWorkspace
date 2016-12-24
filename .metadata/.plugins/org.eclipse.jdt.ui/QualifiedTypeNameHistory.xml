@@ -18,6 +18,15 @@
 <fullyQualifiedTypeName name="com.ricks.dao.BookDAOImpl"/>
 <fullyQualifiedTypeName name="com.ricks.service.BookServiceImpl"/>
 <fullyQualifiedTypeName name="com.ricks.service.BookServiceFactory"/>
-<fullyQualifiedTypeName name="com.ricks.domain.Book"/>
 <fullyQualifiedTypeName name="javax.ws.rs.Consumes"/>
+<fullyQualifiedTypeName name="com.ricks.util.JsonUtil"/>
+<fullyQualifiedTypeName name="com.ricks.domain.Book"/>
+<fullyQualifiedTypeName name="com.ricks.server.HelloService"/>
+<fullyQualifiedTypeName name="javax.jws.WebService"/>
+<fullyQualifiedTypeName name="org.springframework.aop.MethodBeforeAdvice"/>
+<fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
+<fullyQualifiedTypeName name="com.ricks.service.CustomerService"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+<fullyQualifiedTypeName name="org.springframework.aop.AfterReturningAdvice"/>
 </qualifiedTypeNameHistroy>

@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class JsonUtil {
-	public <T> T convertJsonToJava(String jsonText, Class<T> clazz) {
+	public static <T> T convertJsonToJava(String jsonText, Class<T> clazz) {
 		T response = null;
 		ObjectMapper mapper = new ObjectMapper();
 		try {
@@ -23,7 +23,7 @@ public class JsonUtil {
 		return response;
 	}
 
-	public String convertJavaToJson(Object object) {
+	public static String convertJavaToJson(Object object) {
 		ObjectMapper mapper = new ObjectMapper();
 		String jsonText = "";
 		try {

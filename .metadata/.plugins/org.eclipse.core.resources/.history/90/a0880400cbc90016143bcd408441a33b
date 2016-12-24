@@ -1,0 +1,14 @@
+package com.ricks.advice;
+
+import java.lang.reflect.Method;
+
+import org.springframework.aop.MethodBeforeAdvice;
+
+public class LoggingBeforeAdvice implements MethodBeforeAdvice {
+
+	public void before(Method method, Object[] m_args, Object target) throws Throwable {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

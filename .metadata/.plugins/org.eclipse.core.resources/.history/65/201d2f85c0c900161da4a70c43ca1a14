@@ -1,0 +1,22 @@
+package com.ricks.service;
+
+public class CustomerServiceImpl implements CustomerService {
+
+	private String url,name;
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void printName() {
+		System.out.println(name);
+	}
+
+	public void printUrl() {
+		System.out.println(url);
+	}
+
+}
