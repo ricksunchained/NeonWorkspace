@@ -66,6 +66,8 @@
 			<item value="com.ricks"/>
 		</list>
 		<list key="artifactId">
+			<item value="DemoQuartzJobScheduling"/>
+			<item value="AroundAdvice"/>
 			<item value="JaxWS-Server"/>
 			<item value="abc"/>
 			<item value="Abc"/>

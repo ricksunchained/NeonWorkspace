@@ -1,0 +1,1254 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 26 14:15:09 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@138eb89: startup date [Mon Dec 26 14:15:09 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>129</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/ricks/cfgs/myConfig.xml]</td>
+</tr>
+
+<tr>
+<td>332</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Ignored XML validation warning</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 76; SchemaLocation: schemaLocation value = 'http://www.springframework.org/schema/beans     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd     http://www.springframework.org/schema/context/spring-context-3.0.xsd' must have even number of URI's.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:392)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.storeLocations(XMLSchemaValidator.java:2347)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1754)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:740)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:380)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:619)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:504)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:613)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:514)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.ricks.App.main(App.java:14)
+</td></tr>
+
+<tr>
+<td>710</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/ricks/cfgs/myConfig.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'driverClassName' threw exception; nested exception is java.lang.IllegalStateException: Could not load JDBC driver class [com.mysql.jdbc.Driver]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 26 14:17:03 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@29104a: startup date [Mon Dec 26 14:17:04 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>48</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/ricks/cfgs/myConfig.xml]</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Ignored XML validation warning</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 76; SchemaLocation: schemaLocation value = 'http://www.springframework.org/schema/beans     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd     http://www.springframework.org/schema/context/spring-context-3.0.xsd' must have even number of URI's.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:392)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.storeLocations(XMLSchemaValidator.java:2347)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1754)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:740)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:380)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:619)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:504)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:613)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:514)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.ricks.App.main(App.java:14)
+</td></tr>
+
+<tr>
+<td>240</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.jdbc.datasource.DriverManagerDataSource category">org.springframework.jdbc.datasource.DriverManagerDataSource</td>
+<td title="Message">Loaded JDBC driver: com.mysql.jdbc.Driver</td>
+</tr>
+
+<tr>
+<td>327</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDAO' defined in class path resource [com/ricks/cfgs/myConfig.xml]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ricks.dao.AccountDAO]: Specified class is an interface</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 26 14:17:46 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@29104a: startup date [Mon Dec 26 14:17:46 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>52</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/ricks/cfgs/myConfig.xml]</td>
+</tr>
+
+<tr>
+<td>113</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Ignored XML validation warning</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 76; SchemaLocation: schemaLocation value = 'http://www.springframework.org/schema/beans     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd     http://www.springframework.org/schema/context/spring-context-3.0.xsd' must have even number of URI's.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:392)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.storeLocations(XMLSchemaValidator.java:2347)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1754)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:740)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:380)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:619)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:504)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:613)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:514)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.ricks.App.main(App.java:14)
+</td></tr>
+
+<tr>
+<td>254</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.jdbc.datasource.DriverManagerDataSource category">org.springframework.jdbc.datasource.DriverManagerDataSource</td>
+<td title="Message">Loaded JDBC driver: com.mysql.jdbc.Driver</td>
+</tr>
+
+<tr>
+<td>301</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDAO' defined in class path resource [com/ricks/cfgs/myConfig.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'jdbcTemplate' of bean class [com.ricks.dao.AccountDAOImpl]: Bean property 'jdbcTemplate' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 26 14:19:41 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@29104a: startup date [Mon Dec 26 14:19:41 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>47</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/ricks/cfgs/myConfig.xml]</td>
+</tr>
+
+<tr>
+<td>124</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Ignored XML validation warning</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 76; SchemaLocation: schemaLocation value = 'http://www.springframework.org/schema/beans     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd     http://www.springframework.org/schema/context/spring-context-3.0.xsd' must have even number of URI's.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:392)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.storeLocations(XMLSchemaValidator.java:2347)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1754)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:740)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:380)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:619)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:504)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:613)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:514)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.ricks.App.main(App.java:14)
+</td></tr>
+
+<tr>
+<td>266</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.jdbc.datasource.DriverManagerDataSource category">org.springframework.jdbc.datasource.DriverManagerDataSource</td>
+<td title="Message">Loaded JDBC driver: com.mysql.jdbc.Driver</td>
+</tr>
+
+<tr>
+<td>293</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountDAO' defined in class path resource [com/ricks/cfgs/myConfig.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'jdbcTemplate' of bean class [com.ricks.dao.AccountDAOImpl]: Bean property 'jdbcTemplate' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 26 14:20:17 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@29104a: startup date [Mon Dec 26 14:20:17 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>48</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/ricks/cfgs/myConfig.xml]</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Ignored XML validation warning</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 76; SchemaLocation: schemaLocation value = 'http://www.springframework.org/schema/beans     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd     http://www.springframework.org/schema/context/spring-context-3.0.xsd' must have even number of URI's.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:392)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.storeLocations(XMLSchemaValidator.java:2347)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1754)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:740)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:380)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:619)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:504)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:613)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:514)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.ricks.App.main(App.java:14)
+</td></tr>
+
+<tr>
+<td>240</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.jdbc.datasource.DriverManagerDataSource category">org.springframework.jdbc.datasource.DriverManagerDataSource</td>
+<td title="Message">Loaded JDBC driver: com.mysql.jdbc.Driver</td>
+</tr>
+
+<tr>
+<td>268</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountService' defined in class path resource [com/ricks/cfgs/myConfig.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'accountDAO' of bean class [com.ricks.service.AccountServiceImpl]: Bean property 'accountDAO' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 26 14:20:31 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@29104a: startup date [Mon Dec 26 14:20:31 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>49</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/ricks/cfgs/myConfig.xml]</td>
+</tr>
+
+<tr>
+<td>105</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Ignored XML validation warning</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 76; SchemaLocation: schemaLocation value = 'http://www.springframework.org/schema/beans     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd     http://www.springframework.org/schema/context/spring-context-3.0.xsd' must have even number of URI's.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:392)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.storeLocations(XMLSchemaValidator.java:2347)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1754)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:740)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:380)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:619)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:504)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:613)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:514)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.ricks.App.main(App.java:14)
+</td></tr>
+
+<tr>
+<td>245</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.jdbc.datasource.DriverManagerDataSource category">org.springframework.jdbc.datasource.DriverManagerDataSource</td>
+<td title="Message">Loaded JDBC driver: com.mysql.jdbc.Driver</td>
+</tr>
+
+<tr>
+<td>413</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.advice.MyAroundAdvice category">com.ricks.advice.MyAroundAdvice</td>
+<td title="Message">Entered Method deposit of class org.springframework.aop.framework.ReflectiveMethodInvocation having args values [Ljava.lang.Object;@1b64261</td>
+</tr>
+
+<tr>
+<td>1446</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]</td>
+</tr>
+
+<tr>
+<td>1494</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.jdbc.support.SQLErrorCodesFactory category">org.springframework.jdbc.support.SQLErrorCodesFactory</td>
+<td title="Message">SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 26 14:20:55 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@29104a: startup date [Mon Dec 26 14:20:55 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>48</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/ricks/cfgs/myConfig.xml]</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Ignored XML validation warning</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 76; SchemaLocation: schemaLocation value = 'http://www.springframework.org/schema/beans     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd     http://www.springframework.org/schema/context/spring-context-3.0.xsd' must have even number of URI's.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:392)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.storeLocations(XMLSchemaValidator.java:2347)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1754)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:740)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:380)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:619)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:504)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:613)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:514)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.ricks.App.main(App.java:14)
+</td></tr>
+
+<tr>
+<td>239</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.jdbc.datasource.DriverManagerDataSource category">org.springframework.jdbc.datasource.DriverManagerDataSource</td>
+<td title="Message">Loaded JDBC driver: com.mysql.jdbc.Driver</td>
+</tr>
+
+<tr>
+<td>312</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.advice.MyAroundAdvice category">com.ricks.advice.MyAroundAdvice</td>
+<td title="Message">Entered Method deposit of class org.springframework.aop.framework.ReflectiveMethodInvocation having args values [Ljava.lang.Object;@1b64261</td>
+</tr>
+
+<tr>
+<td>648</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.advice.MyAroundAdvice category">com.ricks.advice.MyAroundAdvice</td>
+<td title="Message">The return value of deposit is 1</td>
+</tr>
+
+<tr>
+<td>648</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.advice.MyAroundAdvice category">com.ricks.advice.MyAroundAdvice</td>
+<td title="Message">Entered Method withdraw of class org.springframework.aop.framework.ReflectiveMethodInvocation having args values [Ljava.lang.Object;@12c72c2</td>
+</tr>
+
+<tr>
+<td>683</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.advice.MyAroundAdvice category">com.ricks.advice.MyAroundAdvice</td>
+<td title="Message">The return value of withdraw is 1</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 26 14:26:16 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@29104a: startup date [Mon Dec 26 14:26:16 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>48</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/ricks/cfgs/myConfig.xml]</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Ignored XML validation warning</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 76; SchemaLocation: schemaLocation value = 'http://www.springframework.org/schema/beans     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd     http://www.springframework.org/schema/context/spring-context-3.0.xsd' must have even number of URI's.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:392)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.storeLocations(XMLSchemaValidator.java:2347)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1754)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:740)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:380)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:619)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:504)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:613)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:514)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.ricks.App.main(App.java:17)
+</td></tr>
+
+<tr>
+<td>241</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.jdbc.datasource.DriverManagerDataSource category">org.springframework.jdbc.datasource.DriverManagerDataSource</td>
+<td title="Message">Loaded JDBC driver: com.mysql.jdbc.Driver</td>
+</tr>
+
+<tr>
+<td>315</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.advice.MyAroundAdvice category">com.ricks.advice.MyAroundAdvice</td>
+<td title="Message">Entered Method deposit of class org.springframework.aop.framework.ReflectiveMethodInvocation having args values [Ljava.lang.Object;@1b64261</td>
+</tr>
+
+<tr>
+<td>612</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.advice.MyAroundAdvice category">com.ricks.advice.MyAroundAdvice</td>
+<td title="Message">The return value of deposit is 1</td>
+</tr>
+
+<tr>
+<td>612</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.App category">com.ricks.App</td>
+<td title="Message">Deposite Successfull</td>
+</tr>
+
+<tr>
+<td>612</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.advice.MyAroundAdvice category">com.ricks.advice.MyAroundAdvice</td>
+<td title="Message">Entered Method withdraw of class org.springframework.aop.framework.ReflectiveMethodInvocation having args values [Ljava.lang.Object;@12c72c2</td>
+</tr>
+
+<tr>
+<td>662</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.advice.MyAroundAdvice category">com.ricks.advice.MyAroundAdvice</td>
+<td title="Message">The return value of withdraw is 1</td>
+</tr>
+
+<tr>
+<td>662</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.App category">com.ricks.App</td>
+<td title="Message">Withdraw Successfull</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 26 14:27:08 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@29104a: startup date [Mon Dec 26 14:27:09 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>48</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/ricks/cfgs/myConfig.xml]</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Ignored XML validation warning</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 76; SchemaLocation: schemaLocation value = 'http://www.springframework.org/schema/beans     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd     http://www.springframework.org/schema/context/spring-context-3.0.xsd' must have even number of URI's.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:392)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.storeLocations(XMLSchemaValidator.java:2347)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1754)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:740)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:380)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:619)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:504)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:613)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:514)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.ricks.App.main(App.java:17)
+</td></tr>
+
+<tr>
+<td>241</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.jdbc.datasource.DriverManagerDataSource category">org.springframework.jdbc.datasource.DriverManagerDataSource</td>
+<td title="Message">Loaded JDBC driver: com.mysql.jdbc.Driver</td>
+</tr>
+
+<tr>
+<td>315</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.advice.MyAroundAdvice category">com.ricks.advice.MyAroundAdvice</td>
+<td title="Message">Entered Method deposit of class org.springframework.aop.framework.ReflectiveMethodInvocation having args values [Ljava.lang.Object;@1b64261</td>
+</tr>
+
+<tr>
+<td>621</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.advice.MyAroundAdvice category">com.ricks.advice.MyAroundAdvice</td>
+<td title="Message">The return value of deposit is 1</td>
+</tr>
+
+<tr>
+<td>621</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.App category">com.ricks.App</td>
+<td title="Message">Deposite Successfull</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 26 14:27:38 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@29104a: startup date [Mon Dec 26 14:27:38 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>48</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/ricks/cfgs/myConfig.xml]</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Ignored XML validation warning</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 76; SchemaLocation: schemaLocation value = 'http://www.springframework.org/schema/beans     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd     http://www.springframework.org/schema/context/spring-context-3.0.xsd' must have even number of URI's.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:392)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.storeLocations(XMLSchemaValidator.java:2347)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1754)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:740)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:380)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:619)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:504)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:613)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:514)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.ricks.App.main(App.java:17)
+</td></tr>
+
+<tr>
+<td>241</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.jdbc.datasource.DriverManagerDataSource category">org.springframework.jdbc.datasource.DriverManagerDataSource</td>
+<td title="Message">Loaded JDBC driver: com.mysql.jdbc.Driver</td>
+</tr>
+
+<tr>
+<td>315</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.advice.MyAroundAdvice category">com.ricks.advice.MyAroundAdvice</td>
+<td title="Message">Entered Method deposit of class org.springframework.aop.framework.ReflectiveMethodInvocation having args values [Ljava.lang.Object;@1b64261</td>
+</tr>
+
+<tr>
+<td>647</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.advice.MyAroundAdvice category">com.ricks.advice.MyAroundAdvice</td>
+<td title="Message">The return value of deposit is 1</td>
+</tr>
+
+<tr>
+<td>647</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.App category">com.ricks.App</td>
+<td title="Message">Deposite Successfull</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Mon Dec 26 14:28:14 IST 2016<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.context.support.ClassPathXmlApplicationContext category">org.springframework.context.support.ClassPathXmlApplicationContext</td>
+<td title="Message">Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@29104a: startup date [Mon Dec 26 14:28:14 IST 2016]; root of context hierarchy</td>
+</tr>
+
+<tr>
+<td>48</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Loading XML bean definitions from class path resource [com/ricks/cfgs/myConfig.xml]</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="org.springframework.beans.factory.xml.XmlBeanDefinitionReader category">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</td>
+<td title="Message">Ignored XML validation warning</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 76; SchemaLocation: schemaLocation value = 'http://www.springframework.org/schema/beans     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd     http://www.springframework.org/schema/context/spring-context-3.0.xsd' must have even number of URI's.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:392)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.storeLocations(XMLSchemaValidator.java:2347)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1754)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:740)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:380)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:619)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:880)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:504)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:613)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:514)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.ricks.App.main(App.java:17)
+</td></tr>
+
+<tr>
+<td>243</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.springframework.jdbc.datasource.DriverManagerDataSource category">org.springframework.jdbc.datasource.DriverManagerDataSource</td>
+<td title="Message">Loaded JDBC driver: com.mysql.jdbc.Driver</td>
+</tr>
+
+<tr>
+<td>317</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.advice.MyAroundAdvice category">com.ricks.advice.MyAroundAdvice</td>
+<td title="Message">Entered Method withdraw of class org.springframework.aop.framework.ReflectiveMethodInvocation having args values [Ljava.lang.Object;@1b64261</td>
+</tr>
+
+<tr>
+<td>640</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.advice.MyAroundAdvice category">com.ricks.advice.MyAroundAdvice</td>
+<td title="Message">The return value of withdraw is 1</td>
+</tr>
+
+<tr>
+<td>640</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.ricks.App category">com.ricks.App</td>
+<td title="Message">Withdraw Successfull</td>
+</tr>

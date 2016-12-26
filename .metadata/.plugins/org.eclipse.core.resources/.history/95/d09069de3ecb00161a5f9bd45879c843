@@ -1,0 +1,21 @@
+package com.ricks.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class AccountDAOImpl implements AccountDAO {
+	@Autowired
+	public JdbcTemplate jdbcTemplate;
+
+	public Double getBalance(Integer accNo) {
+		String sql = "select amount from account where acc_no=?";
+		return jdbcTemplate.queryForObject(sql, Double.class, accNo);
+	}
+
+	public Integer setBalance(Integer accNo, Double amount) {
+		String sql = "update account set amount=? where accno=?";
+		int count = jdbcTemplate.update(sql, amount, accNo);
+		return count;
+	}
+
+}

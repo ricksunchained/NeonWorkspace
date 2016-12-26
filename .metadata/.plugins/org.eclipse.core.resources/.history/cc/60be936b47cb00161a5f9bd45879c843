@@ -1,0 +1,17 @@
+package com.ricks;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.ricks.service.AccountService;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+	public static void main(String[] args) {
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("com/ricks/cfgs/myConfig.xml");
+		AccountService accountService= applicationContext.getBean("accountServiceProxy",AccountService.class);
+	}
+}

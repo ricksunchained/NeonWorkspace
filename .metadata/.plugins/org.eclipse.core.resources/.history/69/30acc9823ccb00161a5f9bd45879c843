@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<!-- <bean id="loggingBeforeAdvice" class="com.ricks.advice.LoggingBeforeAdvice"></bean> -->
+	<bean id="loggingAfterAdvice" class="com.ricks.advice.LoggingAfterAdvice"></bean>
+	<bean id="customerService" class="com.ricks.service.CustomerServiceImpl">
+		<property name="name" value="shatish" />
+		<property name="url" value="ricksforu@yahoo.com" />
+	</bean>
+	<bean id="customerServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="proxyInterfaces" value="com.ricks.service.CustomerService" />
+		<!-- <property name="interceptorNames" value="loggingBeforeAdvice" /> -->
+		<property name="interceptorNames" >
+		<!-- <value>loggingBeforeAdvice</value> -->
+		<value>loggingAfterAdvice</value>
+		</property> 
+		<property name="target" ref="customerService" />
+	</bean>
+
+</beans>
+

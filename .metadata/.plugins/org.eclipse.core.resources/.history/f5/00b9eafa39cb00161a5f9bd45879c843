@@ -1,0 +1,15 @@
+package com.ricks.dao;
+
+public class AccountDAOImpl implements AccountDAO{
+
+	public Double getBalance(Integer accNo) {
+
+		return null;
+	}
+
+	public Integer setBalance(Integer accNo, Double amount) {
+
+		return null;
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.ricks.dao;
+
+public interface AccountDAO {
+
+	public int deposit(int accNo, Double amount);
+
+	public int withdraw(int accNo, Double amount);
+		
+}

@@ -1,0 +1,16 @@
+package com.ricks.dao;
+
+public class AccountDAOImpl implements AccountDAO {
+
+	public JdacTempl
+	public int deposit(int accNo, Double amount) {
+
+		return 0;
+	}
+
+	public int withdraw(int accNo, Double amount) {
+
+		return 0;
+	}
+
+}

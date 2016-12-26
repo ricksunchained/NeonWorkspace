@@ -1,0 +1,17 @@
+package com.ricks.advice;
+
+import org.aopalliance.intercept.MethodInterceptor;
+import org.aopalliance.intercept.MethodInvocation;
+import org.apache.log4j.Logger;
+
+public class MyAroundAdvice implements MethodInterceptor {
+	Logger log = Logger.getLogger(MyAroundAdvice.class);
+
+	public Object invoke(MethodInvocation invocation) throws Throwable {
+
+		Object returnVal = null;
+
+		return null;
+	}
+
+}
