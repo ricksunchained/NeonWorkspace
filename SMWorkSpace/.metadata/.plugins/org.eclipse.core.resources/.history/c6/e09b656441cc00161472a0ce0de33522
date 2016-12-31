@@ -1,0 +1,9 @@
+package com.ricks.domain;
+
+public class PlanFinder {
+	public String[] findPlan(int a,int b, int c) {
+		System.out.println("into findPlan Method");
+		return new String[] { "jeven saral", "jeven simraddhi" };
+	}
+
+}

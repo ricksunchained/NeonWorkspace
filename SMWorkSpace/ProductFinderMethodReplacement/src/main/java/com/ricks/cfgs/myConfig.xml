@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="planFinder" class="com.ricks.domain.PlanFinder">
+		<!-- The method to be replaced can be overloaded to make it specific we 
+			need to use <arg-type> tag. -->
+		<replaced-method name="findPlan" replacer="findPlanReplacer">
+			<arg-type>Object</arg-type>
+		</replaced-method>
+	</bean>
+	<bean id="findPlanReplacer" class="com.ricks.mr.FindPlanReplacer">
+	</bean>
+</beans>

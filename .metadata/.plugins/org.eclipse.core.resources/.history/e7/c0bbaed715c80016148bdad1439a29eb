@@ -1,6 +1,0 @@
-package com.ricks.server;
-
-public class ApplicationClass {
-	Set<Object> response=new HashSet<Object>;
-
-}

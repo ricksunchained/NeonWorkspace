@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.support.MethodReplacer"/>
+<fullyQualifiedTypeName name="org.omg.PortableServer.ForwardRequestHelper"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactory"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.xml.XmlBeanFactory"/>
+<fullyQualifiedTypeName name="org.springframework.core.io.ClassPathResource"/>
+<fullyQualifiedTypeName name="com.ricks.domain.PlanFinder"/>
+<fullyQualifiedTypeName name="org.springframework.core.io.FileSystemResource"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,7 @@
+package com.ricks.exception;
+
+public class InvalidUserException extends RuntimeException {
+	InvalidUserException(String msg) {
+		super(msg);
+	}
+}

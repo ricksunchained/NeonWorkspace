@@ -1,0 +1,21 @@
+package com.ricks.mr;
+
+import java.lang.reflect.Method;
+
+import org.springframework.beans.factory.support.MethodReplacer;
+
+public class FindPlanReplacer implements MethodReplacer {
+
+	public Object reimplement(Object target, Method method, Object[] m_args) throws Throwable {
+
+		if (method.getName().equals("findPlan")) {
+			for (Object object : m_args) {
+				System.out.println(object);
+			}
+			return new String[] { "Abhay jeevan", "Abhay Samradhi" };
+		}
+
+		return null;
+	}
+
+}

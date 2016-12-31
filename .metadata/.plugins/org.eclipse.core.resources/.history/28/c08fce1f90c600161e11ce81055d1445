@@ -1,8 +1,0 @@
-package com.ricks.ws;
-
-public class Snippet {
-	public static void main(String[] args) {
-		com.ricks
-	}
-}
-

@@ -1,7 +1,0 @@
-package com.ricks.domain;
-
-public class Book {
-int isbn;
-String title,author;
-double price;
-}

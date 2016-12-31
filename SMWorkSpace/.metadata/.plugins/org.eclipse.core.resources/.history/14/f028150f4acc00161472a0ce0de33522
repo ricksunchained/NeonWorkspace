@@ -1,0 +1,24 @@
+package com.ricks.domain;
+
+public class PlanFinder {
+	public String[] findPlan(int a, int b, int c) {
+		/*
+		 * method which has bug and need to be fixed but will be impossible
+		to that as it is already in production and cost of fixing it may incure
+		excess fees as the code will be replaced with another code.
+		so we made use of method replacement here.
+		*/
+		System.out.println("into findPlan Method");
+		return new String[] { "jeven saral", "jeven simraddhi" };
+	}
+
+	public String[] findPlan(int a, int b) {
+		/*
+		 * overloaded method but while replacing the replacer will be in
+		 * ambiguity whether which method to replace
+		 */ 
+		System.out.println("into findPlan Method");
+		return new String[] { "jeven saral1", "jeven simraddhi1" };
+	}
+
+}

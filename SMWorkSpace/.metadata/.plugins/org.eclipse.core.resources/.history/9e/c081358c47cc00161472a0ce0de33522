@@ -1,0 +1,9 @@
+<beans>
+<bean id="planFinder" class="Planfinder">
+
+</bean>
+<bean id="FindPlanReplacer">
+
+
+</bean>
+</beans>

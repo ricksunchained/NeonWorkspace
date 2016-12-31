@@ -1,0 +1,9 @@
+<beans>
+	<bean id="planFinder" class="com.ricks.domain.Planfinder">
+
+	</bean>
+	<bean id="findPlanReplacer" class="com.ricks.mr.FindPlanReplacer">
+
+
+	</bean>
+</beans>

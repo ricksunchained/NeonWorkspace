@@ -1,7 +1,0 @@
-package com.ricks.advice;
-
-import org.springframework.aop.MethodBeforeAdvice;
-
-public class LoggingBeforeAdvice implements MethodBeforeAdvice{
-
-}

@@ -1,0 +1,39 @@
+package com.ricks.service;
+
+import org.springframework.stereotype.Service;
+
+import com.ricks.dao.AccountDAO;
+
+@Service
+public class AccountServiceImpl implements AccountService {
+	public AccountDAO accountDAO;
+
+	public AccountDAO getAccountDAO() {
+		return accountDAO;
+	}
+
+	public void setAccountDAO(AccountDAO accountDAO) {
+		this.accountDAO = accountDAO;
+	}
+
+	public int deposit(int accNo, Double amount) {
+		Double balance = accountDAO.getBalance(accNo);
+		Integer count = 0;
+		if (amount > 0) {
+			amount += balance;
+			count = accountDAO.setBalance(accNo, amount);
+		}
+		return count;
+	}
+
+	public int withdraw(int accNo, Double amount) {
+		Double balance = accountDAO.getBalance(accNo);
+		Integer count = 0;
+		if (balance > 0) {
+			balance = balance - amount;
+			count = accountDAO.setBalance(accNo, balance);
+		}
+		return count;
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.ricks;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.FileSystemResource;
+
+import com.ricks.domain.PlanFinder;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+	public static void main(String[] args) {
+		BeanFactory beanFactory = new XmlBeanFactory(new FileSystemResource("com/ricks/cfgs/myConfig.xml"));
+		PlanFinder planFinder = beanFactory.getBean("planFinder", PlanFinder.class);
+		planFinder.findPlan(12, 23, 45);
+	}
+}

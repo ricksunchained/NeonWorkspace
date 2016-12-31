@@ -1,0 +1,5 @@
+package com.ricks.security;
+
+public class UserAuthorization {
+
+}

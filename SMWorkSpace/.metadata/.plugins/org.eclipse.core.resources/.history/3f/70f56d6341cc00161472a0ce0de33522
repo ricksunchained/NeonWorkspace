@@ -1,0 +1,8 @@
+package com.ricks.domain;
+
+public class PlanFinder {
+	public String[] findPlan() {
+		return new String[]{"jeven saral","jeven simraddhi"};
+	}
+
+}

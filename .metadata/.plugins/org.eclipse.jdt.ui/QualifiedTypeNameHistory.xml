@@ -45,4 +45,8 @@
 <fullyQualifiedTypeName name="com.ricks.service.AccountService"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="com.ricks.exception.InsufficientBalanceException"/>
+<fullyQualifiedTypeName name="com.ricks.security.UserAuthorization"/>
+<fullyQualifiedTypeName name="com.ricks.exception.InvalidUserException"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,12 @@
+package com.ricks.security;
+
+public class UserAuthorization {
+	public boolean isUserAuthorized(String role) {
+		if(role.equals("Admin User"))
+		{
+			return true;
+		}
+		return false;
+	}
+
+}

@@ -3,6 +3,7 @@ package com.ricks.service;
 import org.springframework.stereotype.Service;
 
 import com.ricks.dao.AccountDAO;
+import com.ricks.exception.InsufficientBalanceException;
 
 @Service
 public class AccountServiceImpl implements AccountService {
@@ -22,7 +23,8 @@ public class AccountServiceImpl implements AccountService {
 		if (amount > 0) {
 			amount += balance;
 			count = accountDAO.setBalance(accNo, amount);
-		}
+		} else
+			throw new InsufficientBalanceException("Insufficient Balance");
 		return count;
 	}
 
